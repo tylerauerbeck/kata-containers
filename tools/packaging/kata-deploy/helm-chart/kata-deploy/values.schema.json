@@ -1,0 +1,70 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "properties": {
+        "env": {
+            "properties": {
+                "agentHttpsProxy": {
+                    "type": "string"
+                },
+                "agentNoProxy": {
+                    "type": "string"
+                },
+                "allowedHypervisorAnnotations": {
+                    "type": "string"
+                },
+                "createDefaultRuntimeClass": {
+                    "type": "string"
+                },
+                "createRuntimeClasses": {
+                    "type": "string"
+                },
+                "debug": {
+                    "type": "string"
+                },
+                "defaultShim": {
+                    "type": "string"
+                },
+                "hostOS": {
+                    "type": "string"
+                },
+                "installationPrefix": {
+                    "type": "string"
+                },
+                "multiInstallSuffix": {
+                    "type": "string"
+                },
+                "pullTypeMapping": {
+                    "type": "string"
+                },
+                "shims": {
+                    "type": "string"
+                },
+                "snapshotterHandlerMapping": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "image": {
+            "properties": {
+                "reference": {
+                    "type": "string"
+                },
+                "tag": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "imagePullPolicy": {
+            "type": "string"
+        },
+        "imagePullSecrets": {
+            "type": "array"
+        },
+        "k8sDistribution": {
+            "type": "string"
+        }
+    },
+    "type": "object"
+}
